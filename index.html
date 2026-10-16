@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Veterinaria Huellavet | Veterinaria en San Luis, Lima</title>
   <meta name="description" content="Veterinaria Huellavet en San Luis, Lima: consulta veterinaria, baño y corte (grooming) y petshop. Lunes a sábado de 9:00 a 18:00, con o sin cita. Av. San Juan 1105.">
   <meta name="theme-color" content="#349698">
@@ -64,7 +65,12 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Veterinaria Huellavet, ir al inicio">
-        <picture><source srcset="assets/logo-horizontal.webp" type="image/webp"><img src="assets/logo-horizontal.png" alt="Huellavet · Donde cada huella importa" width="600" height="121"></picture>
+        <picture>
+          <source media="(max-width: 899px)" srcset="assets/logo-horizontal-movil.webp" type="image/webp" width="438" height="88">
+          <source media="(max-width: 899px)" srcset="assets/logo-horizontal-movil.png" type="image/png" width="438" height="88">
+          <source srcset="assets/logo-horizontal.webp" type="image/webp">
+          <img src="assets/logo-horizontal.png" alt="Huellavet · Donde cada huella importa" width="600" height="121">
+        </picture>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
         <span class="bars" aria-hidden="true"></span>
@@ -83,10 +89,6 @@
 
   <main id="contenido">
     <section class="hero" id="inicio">
-      <picture class="hero-media">
-        <source media="(max-width: 899px)" srcset="assets/hero-movil.webp" width="800" height="800">
-        <img src="assets/hero.webp" alt="Equipo veterinario de Huellavet con un perro en la clínica" width="1600" height="900" fetchpriority="high">
-      </picture>
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="pill pill-teal">Veterinaria en San Luis, Lima</p>
@@ -96,16 +98,28 @@
           <a class="btn btn-primary btn-lg" href="https://wa.me/51986658824" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
           <p class="hero-meta">Lunes a sábado · 9:00 – 18:00</p>
         </div>
+        <div class="hero-art">
+          <span class="circle c-big" aria-hidden="true"></span>
+          <span class="circle c-accent" aria-hidden="true"></span>
+          <span class="circle c-small" aria-hidden="true"></span>
+          <img class="hero-cut" src="assets/hero-recorte.webp" alt="Equipo veterinario de Huellavet con un perro" width="477" height="484" fetchpriority="high">
+          <nav class="hero-tags" aria-label="Servicios">
+            <a class="tag t1" href="#srv-consulta"><span class="tag-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 3v6a4 4 0 0 0 8 0V3M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>Consulta</a>
+            <a class="tag t2" href="#srv-grooming"><span class="tag-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4M9 6l3-2 3 2"/></svg></span>Grooming</a>
+            <a class="tag t3" href="#srv-petshop"><span class="tag-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></svg></span>Petshop</a>
+          </nav>
+        </div>
       </div>
     </section>
+    <div class="wave wave-to-soft" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40 C 240 80 480 0 720 30 S 1200 70 1440 30 V80 H0Z"/></svg></div>
 
-    <section class="section section-soft" id="servicios" aria-labelledby="servicios-titulo">
+    <section class="section section-soft paws" id="servicios" aria-labelledby="servicios-titulo">
       <div class="container">
         <p class="label">Lo que hacemos</p>
         <h2 id="servicios-titulo">Nuestros <span class="kw">servicios</span></h2>
         <div class="cards">
-          <article class="card">
-            <img class="card-img" src="assets/servicios/consulta.webp" width="800" height="600" alt="Consulta veterinaria en Huellavet" loading="lazy">
+          <article class="card" id="srv-consulta">
+            <figure class="svc-circle ring-teal"><img src="assets/servicios/consulta.webp" width="800" height="600" alt="Consulta veterinaria en Huellavet" loading="lazy"></figure>
             <div class="card-body">
               <p class="pill pill-teal pill-sm">Consulta</p>
               <h3>Consulta veterinaria</h3>
@@ -113,8 +127,8 @@
               <a class="btn btn-primary btn-block" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20agendar%20una%20consulta%20veterinaria%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20horarios%20tienen%20disponibles%3F" target="_blank" rel="noopener">Agendar consulta</a>
             </div>
           </article>
-          <article class="card">
-            <img class="card-img" src="assets/servicios/grooming.webp" width="800" height="600" alt="Baño y corte en Huellavet" loading="lazy">
+          <article class="card" id="srv-grooming">
+            <figure class="svc-circle ring-magenta"><img src="assets/servicios/grooming.webp" width="800" height="600" alt="Baño y corte en Huellavet" loading="lazy"></figure>
             <div class="card-body">
               <p class="pill pill-teal pill-sm">Grooming</p>
               <h3>Baño y corte</h3>
@@ -126,8 +140,8 @@
               <a class="btn btn-primary btn-block" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20reservar%20un%20ba%C3%B1o%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20d%C3%ADas%20tienen%20disponibles%20y%20cu%C3%A1nto%20ser%C3%ADa%20seg%C3%BAn%20su%20tama%C3%B1o%3F" target="_blank" rel="noopener">Reservar baño</a>
             </div>
           </article>
-          <article class="card">
-            <img class="card-img" src="assets/servicios/petshop.webp" width="800" height="600" alt="Estantes del petshop con productos para mascotas" loading="lazy">
+          <article class="card" id="srv-petshop">
+            <figure class="svc-circle ring-teal"><img src="assets/servicios/petshop.webp" width="800" height="600" alt="Estantes del petshop con productos para mascotas" loading="lazy"></figure>
             <div class="card-body">
               <p class="pill pill-teal pill-sm">Petshop</p>
               <h3>Petshop</h3>
@@ -139,6 +153,7 @@
       </div>
     </section>
 
+    <div class="wave wave-from-soft" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 30 C 300 70 520 0 760 35 S 1180 75 1440 25 V0 H0Z"/></svg></div>
     <section class="section" id="horario" aria-labelledby="horario-titulo">
       <div class="container narrow">
         <p class="label">Te esperamos</p>
@@ -171,7 +186,7 @@
       </div>
     </section>
 
-    <section class="section" id="resenas" aria-labelledby="resenas-titulo">
+    <section class="section paws" id="resenas" aria-labelledby="resenas-titulo">
       <div class="container narrow center">
         <p class="label">Tu opinión importa</p>
         <h2 id="resenas-titulo">¿Ya nos <span class="kw">visitaste?</span></h2>
@@ -199,6 +214,7 @@
     </section>
   </main>
 
+  <div class="wave wave-footer" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 50 C 260 0 520 80 780 40 S 1220 0 1440 45 V80 H0Z"/></svg></div>
   <footer class="site-footer">
     <div class="container footer-inner">
       <img src="assets/logo-huellavet-blanco.png" alt="Huellavet" width="120" height="103">

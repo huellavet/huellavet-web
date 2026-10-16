@@ -163,3 +163,54 @@ p{margin:0 0 1rem}
 .brand img{width:auto;height:48px;max-width:240px}
 @media (min-width:900px){ .brand img{height:60px;max-width:300px} }
 @media (max-width:420px){.social{gap:.5rem}.social .pill-link{padding:.6rem 1rem}}
+
+/* ===== SI-008 MUESTRA v3 (Jinx / Petcafy / Patte) ===== */
+:root{--teal-light:#DDF0F0;--aqua:#C9ECEA;--yellow:#FFF3C4;--deep:#123F40}
+.hero{padding:2rem 0 1rem;min-height:0;display:block;overflow:hidden;background:#fff}
+.hero-inner{display:grid;gap:1.5rem;align-items:center;padding:0}
+.hero-art{position:relative;width:min(420px,100%);aspect-ratio:1/1;margin:0 auto}
+.circle{position:absolute;border-radius:50%;display:block}
+.c-big{inset:6% 4% 0 8%;background:var(--teal-light)}
+.c-accent{width:46%;aspect-ratio:1;right:-4%;top:-2%;background:var(--yellow)}
+.c-small{width:30%;aspect-ratio:1;left:-2%;bottom:8%;background:var(--aqua)}
+.hero-cut{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:92%;height:auto;z-index:2}
+.hero-tags{position:absolute;inset:0;z-index:3;pointer-events:none}
+.tag{pointer-events:auto;position:absolute;display:inline-flex;align-items:center;gap:.45rem;background:#fff;color:var(--ink);font-weight:700;font-size:.9rem;text-decoration:none;padding:.45rem .9rem .45rem .45rem;border-radius:999px;box-shadow:0 8px 22px rgba(18,63,64,.14);min-height:44px}
+.tag-ico{width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--teal-text);color:#fff}
+.tag-ico svg{width:18px;height:18px}
+.t2 .tag-ico{background:var(--magenta)}
+.t1{left:-2%;top:20%}.t2{right:-2%;top:44%}.t3{left:4%;bottom:6%}
+.tag:hover{transform:translateY(-1px)}
+@media (max-width:899px){ .hero-art{width:min(330px,88%)} .tag{font-size:.82rem;padding:.35rem .75rem .35rem .35rem} .tag-ico{width:28px;height:28px} .t1{left:-4%;top:12%} .t2{right:-6%;top:40%} .t3{left:-2%;bottom:4%} }
+@media (min-width:900px){ .hero{padding:3rem 0 1rem} .hero-inner{grid-template-columns:1fr 1fr;gap:3rem} .hero-text{max-width:none} }
+
+/* Ondas */
+.wave{line-height:0;margin-top:-1px}
+.wave svg{display:block;width:100%;height:56px}
+.wave-to-soft{background:#fff}.wave-to-soft path{fill:var(--soft)}
+.wave-from-soft{background:#fff}.wave-from-soft path{fill:var(--soft)}
+.wave-footer{background:#fff}.wave-footer path{fill:var(--deep)}
+
+/* Servicios en círculo con anillo parcial */
+.card{background:transparent;border:0;box-shadow:none;overflow:visible;text-align:center}
+.svc-circle{position:relative;width:220px;aspect-ratio:1;margin:0 auto 1rem;border-radius:50%;padding:10px}
+.svc-circle::before{content:"";position:absolute;inset:0;border-radius:50%;border:5px solid transparent;transform:rotate(-30deg)}
+.ring-teal::before{border-top-color:var(--teal);border-right-color:var(--teal)}
+.ring-magenta::before{border-top-color:var(--magenta);border-left-color:var(--magenta)}
+.svc-circle img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:var(--shadow)}
+.card-body{background:#fff;border-radius:var(--r-card);box-shadow:var(--shadow);border:1px solid var(--line);align-items:center}
+.card-body .pill{align-self:center}
+.price-box{width:100%}
+
+/* Huellas de fondo (marca de agua muy tenue) */
+.paws{position:relative;isolation:isolate}
+.paws::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.05;pointer-events:none;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 64 64'%3E%3Cg fill='%23123F40' transform='rotate(-18 32 32)'%3E%3Cellipse cx='32' cy='44' rx='12' ry='10'/%3E%3Cellipse cx='16' cy='30' rx='5' ry='7'/%3E%3Cellipse cx='26' cy='19' rx='5' ry='7.5'/%3E%3Cellipse cx='38' cy='19' rx='5' ry='7.5'/%3E%3Cellipse cx='48' cy='30' rx='5' ry='7'/%3E%3C/g%3E%3C/svg%3E");background-size:160px 160px}
+
+/* Footer oscuro */
+.site-footer{background:var(--deep)}
+.paws::after{opacity:.028}
+.wave-footer{background:var(--teal-text)}
+@media (min-width:900px){ .hero-art{width:min(500px,100%)} }
+/* SI-009: logo sin slogan en móvil */
+@media (max-width:899px){ .brand img{height:44px;max-width:220px} }
