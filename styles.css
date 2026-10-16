@@ -157,3 +157,9 @@ p{margin:0 0 1rem}
 }
 .hero-media{border-radius:0;box-shadow:none}
 @media (max-width:899px){ .hero-media img{aspect-ratio:16/11;object-position:center 30%} .hero-inner{padding-top:1.25rem} }
+
+/* SI-007: logo horizontal con slogan en el header */
+.brand{display:block;line-height:0}
+.brand img{width:auto;height:48px;max-width:240px}
+@media (min-width:900px){ .brand img{height:60px;max-width:300px} }
+@media (max-width:420px){.social{gap:.5rem}.social .pill-link{padding:.6rem 1rem}}
