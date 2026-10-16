@@ -4,34 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Veterinaria Huellavet | Veterinaria en San Luis, Lima</title>
-  <meta name="description" content="Veterinaria Huellavet en San Luis, Lima: consulta veterinaria, grooming (próximamente) y petshop. Lunes a sábado de 9:00 a 18:00, con o sin cita. Av. San Juan 1105.">
-  <meta name="theme-color" content="#F5006A">
+  <meta name="description" content="Veterinaria Huellavet en San Luis, Lima: consulta veterinaria, baño y corte (grooming) y petshop. Lunes a sábado de 9:00 a 18:00, con o sin cita. Av. San Juan 1105.">
+  <meta name="theme-color" content="#349698">
   <link rel="canonical" href="https://www.veterinariahuellavet.com/">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
-  <!-- Open Graph (al publicar, reemplazar las rutas por URLs absolutas del dominio final) -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PE">
   <meta property="og:site_name" content="Veterinaria Huellavet">
-  <meta property="og:title" content="Veterinaria Huellavet | Donde cada huella importa">
-  <meta property="og:description" content="Consulta veterinaria, grooming y petshop en San Luis, Lima. Lunes a sábado de 9:00 a 18:00, con o sin cita.">
+  <meta property="og:title" content="Veterinaria Huellavet | Veterinaria en San Luis, Lima">
+  <meta property="og:description" content="Consulta veterinaria, baño y corte (grooming) y petshop en San Luis, Lima. Lunes a sábado de 9:00 a 18:00, con o sin cita.">
   <meta property="og:url" content="https://www.veterinariahuellavet.com/">
-  <meta property="og:image" content="https://www.veterinariahuellavet.com/assets/logo.png">
-  <meta property="og:image:alt" content="Logo de Veterinaria Huellavet">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://www.veterinariahuellavet.com/assets/og-hero.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta property="og:image:alt" content="Equipo veterinario de Huellavet con un perro en la clínica">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VeterinaryCare",
     "name": "Veterinaria Huellavet",
-    "slogan": "Donde cada huella importa",
+    "url": "https://www.veterinariahuellavet.com/",
+    "logo": "https://www.veterinariahuellavet.com/assets/logo-huellavet.png",
+    "image": "https://www.veterinariahuellavet.com/assets/og-hero.jpg",
     "telephone": "+51 986 658 824",
     "address": {
       "@type": "PostalAddress",
@@ -47,7 +53,8 @@
         "opens": "09:00",
         "closes": "18:00"
       }
-    ]
+    ],
+    "sameAs": ["https://www.facebook.com/veterinariahuellavet", "https://www.instagram.com/veterinariahuellavet"]
   }
   </script>
 </head>
@@ -57,152 +64,105 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Veterinaria Huellavet, ir al inicio">
-        <img src="assets/logo-marca.png" alt="" width="44" height="44">
-        <span class="brand-name"><span class="pink">Huella</span><span class="teal">vet</span></span>
+        <img src="assets/logo-huellavet.png" alt="Huellavet" width="120" height="103">
       </a>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#horario">Horario</a>
-        <a href="#ubicacion">Ubicación</a>
-        <a href="#resenas">Reseñas</a>
-        <a href="#empleo">Trabaja con nosotros</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#empleo">Trabaja con nosotros</a></li>
+        </ul>
       </nav>
-      <a class="btn btn-sm btn-primary header-cta" href="https://wa.me/51986658824" target="_blank" rel="noopener">
-        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
-        <span>WhatsApp</span>
-      </a>
     </div>
   </header>
 
   <main id="contenido">
-    <!-- HERO -->
     <section class="hero" id="inicio">
+      <picture class="hero-media">
+        <source media="(max-width: 899px)" srcset="assets/hero-movil.webp" width="800" height="800">
+        <img src="assets/hero.webp" alt="Equipo veterinario de Huellavet con un perro en la clínica" width="1600" height="900" fetchpriority="high">
+      </picture>
       <div class="container hero-inner">
-        <div class="hero-art" aria-hidden="true">
-          <svg class="deco-heart h1d" viewBox="0 0 24 24"><use href="#i-heart"/></svg>
-          <svg class="deco-heart h2d" viewBox="0 0 24 24"><use href="#i-heart"/></svg>
-          <svg class="deco-paw p1d" viewBox="0 0 64 64"><use href="#i-paw"/></svg>
-          <svg class="deco-paw p2d" viewBox="0 0 64 64"><use href="#i-paw"/></svg>
-          <div class="hero-bubble">
-            <svg class="big-paw" viewBox="0 0 64 64"><use href="#i-paw"/></svg>
-            <p class="script teal">¡Te esperamos!</p>
-          </div>
-        </div>
         <div class="hero-text">
-          <p class="eyebrow">Veterinaria en San Luis, Lima</p>
-          <h1 class="script">Donde cada huella importa</h1>
-          <p class="lead">Consulta veterinaria, grooming y petshop en Av. San Juan 1105, San Luis. <strong>Atendemos con o sin cita.</strong></p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://wa.me/51986658824" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
-              Escríbenos por WhatsApp
-            </a>
-            <a class="btn btn-outline btn-lg" href="#horario">Ver horario</a>
-          </div>
-          <p class="hero-meta">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
-            Lunes a sábado · 9:00 – 18:00
-          </p>
+          <p class="pill pill-teal">Veterinaria en San Luis, Lima</p>
+          <h1>Cuidamos a tu <span class="kw">mascota</span></h1>
+          <span class="bar" aria-hidden="true"></span>
+          <p class="lead">Consulta veterinaria, baño y corte (grooming) y petshop en Av. San Juan 1105, San Luis. Atendemos con o sin cita.</p>
+          <a class="btn btn-primary btn-lg" href="https://wa.me/51986658824" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+          <p class="hero-meta">Lunes a sábado · 9:00 – 18:00</p>
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS -->
-    <section class="section" id="servicios" aria-labelledby="servicios-titulo">
+    <section class="section section-soft" id="servicios" aria-labelledby="servicios-titulo">
       <div class="container">
-        <p class="eyebrow center">Lo que hacemos</p>
-        <h2 id="servicios-titulo" class="center script-title">Nuestros <span class="teal">servicios</span></h2>
+        <p class="label">Lo que hacemos</p>
+        <h2 id="servicios-titulo">Nuestros <span class="kw">servicios</span></h2>
         <div class="cards">
           <article class="card">
-            <figure class="svc-img ">
-              <div class="svc-ph" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-paw"/></svg><svg class="ph-heart" viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
-              <img src="assets/servicios/consulta.webp" width="800" height="600" alt="Consulta veterinaria en Huellavet" loading="lazy">
-            </figure>
+            <img class="card-img" src="assets/servicios/consulta.webp" width="800" height="600" alt="Consulta veterinaria en Huellavet" loading="lazy">
             <div class="card-body">
-              <h3 class="script pink">Consulta veterinaria</h3>
+              <p class="pill pill-teal pill-sm">Consulta</p>
+              <h3>Consulta veterinaria</h3>
               <p>Revisamos la salud de tu mascota y te orientamos sobre su cuidado.</p>
-              <a class="btn btn-primary btn-svc" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20agendar%20una%20consulta%20veterinaria%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20horarios%20tienen%20disponibles%3F" target="_blank" rel="noopener">
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>Agendar consulta</a>
+              <a class="btn btn-primary btn-block" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20agendar%20una%20consulta%20veterinaria%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20horarios%20tienen%20disponibles%3F" target="_blank" rel="noopener">Agendar consulta</a>
             </div>
           </article>
           <article class="card">
-            <figure class="svc-img teal">
-              <div class="svc-ph" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-paw"/></svg><svg class="ph-heart" viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
-              <img src="assets/servicios/grooming.webp" width="800" height="600" alt="Grooming en Huellavet" loading="lazy">
-            </figure>
+            <img class="card-img" src="assets/servicios/grooming.webp" width="800" height="600" alt="Baño y corte en Huellavet" loading="lazy">
             <div class="card-body">
-              <h3 class="script teal">Grooming</h3>
+              <p class="pill pill-teal pill-sm">Grooming</p>
+              <h3>Baño y corte</h3>
               <p>Baño y corte para que tu mascota se vea y se sienta bien.</p>
-              <p class="price">Baño desde <span>S/ 30</span><br>Baño y corte desde <span>S/ 50</span></p>
-              <a class="btn btn-primary btn-svc" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20reservar%20un%20ba%C3%B1o%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20d%C3%ADas%20tienen%20disponibles%20y%20cu%C3%A1nto%20ser%C3%ADa%20seg%C3%BAn%20su%20tama%C3%B1o%3F" target="_blank" rel="noopener">
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>Reservar baño</a>
+              <div class="price-box">
+                <p><span>Baño</span> <strong>desde S/ 30</strong></p>
+                <p><span>Baño y corte</span> <strong>desde S/ 50</strong></p>
+              </div>
+              <a class="btn btn-primary btn-block" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20reservar%20un%20ba%C3%B1o%20para%20mi%20mascota.%20%C2%BFQu%C3%A9%20d%C3%ADas%20tienen%20disponibles%20y%20cu%C3%A1nto%20ser%C3%ADa%20seg%C3%BAn%20su%20tama%C3%B1o%3F" target="_blank" rel="noopener">Reservar baño</a>
             </div>
           </article>
           <article class="card">
-            <figure class="svc-img ">
-              <div class="svc-ph" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-paw"/></svg><svg class="ph-heart" viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
-              <img src="assets/servicios/petshop.webp" width="800" height="600" alt="Petshop de Huellavet" loading="lazy">
-            </figure>
+            <img class="card-img" src="assets/servicios/petshop.webp" width="800" height="600" alt="Estantes del petshop con productos para mascotas" loading="lazy">
             <div class="card-body">
-              <h3 class="script pink">Petshop</h3>
+              <p class="pill pill-teal pill-sm">Petshop</p>
+              <h3>Petshop</h3>
               <p>Productos para el cuidado y bienestar de tu mascota.</p>
-              <a class="btn btn-primary btn-svc" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20consultar%20si%20tienen%20disponible%20un%20producto%20para%20mi%20mascota." target="_blank" rel="noopener">
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>Consultar producto</a>
+              <a class="btn btn-primary btn-block" href="https://wa.me/51986658824?text=Hola%20Huellavet%2C%20quisiera%20consultar%20si%20tienen%20disponible%20un%20producto%20para%20mi%20mascota." target="_blank" rel="noopener">Consultar producto</a>
             </div>
           </article>
         </div>
       </div>
     </section>
-
-    <!-- CONÓCENOS: sección "Nuestro local" retirada hasta tener fotos reales (SI-003) -->
 
     <section class="section" id="horario" aria-labelledby="horario-titulo">
       <div class="container narrow">
-        <p class="eyebrow center">Te esperamos</p>
-        <h2 id="horario-titulo" class="center script-title">Horario de atención</h2>
-        <div class="hours-card">
-          <table class="hours">
-            <caption class="sr-only">Horario de atención de Veterinaria Huellavet</caption>
-            <tbody>
-              <tr><th scope="row">Lunes a sábado</th><td>9:00 – 18:00</td></tr>
-              <tr class="closed"><th scope="row">Domingo</th><td>Cerrado</td></tr>
-            </tbody>
-          </table>
-          <p class="badge">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-check"/></svg>
-            Atención con o sin cita
-          </p>
-          <a class="btn btn-primary btn-block" href="https://wa.me/51986658824" target="_blank" rel="noopener">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
-            Escríbenos por WhatsApp
-          </a>
+        <p class="label">Te esperamos</p>
+        <h2 id="horario-titulo">Horario de <span class="kw">atención</span></h2>
+        <div class="box">
+          <dl class="hours">
+            <div><dt>Lunes a sábado</dt><dd>9:00 – 18:00</dd></div>
+            <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+          </dl>
+          <p class="box-note">Atención con o sin cita.</p>
         </div>
       </div>
     </section>
 
-    <!-- UBICACIÓN -->
-    <section class="section section-tint" id="ubicacion" aria-labelledby="ubicacion-titulo">
+    <section class="section section-soft" id="ubicacion" aria-labelledby="ubicacion-titulo">
       <div class="container">
-        <p class="eyebrow center">Cómo encontrarnos</p>
-        <h2 id="ubicacion-titulo" class="center script-title">Ubicación</h2>
+        <p class="label">Cómo encontrarnos</p>
+        <h2 id="ubicacion-titulo">Nuestra <span class="kw">ubicación</span></h2>
         <div class="location">
-          <div class="location-info">
-            <p class="address">
-              <svg class="icon icon-lg" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
-              <span><strong>Av. San Juan 1105</strong><br>San Luis, Lima</span>
-            </p>
-            <p class="address">
-              <svg class="icon icon-lg" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
-              <span><a href="https://wa.me/51986658824" target="_blank" rel="noopener">+51 986 658 824</a><br><small>WhatsApp</small></span>
-            </p>
-            <p class="address">
-              <svg class="icon icon-lg" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
-              <span>Lunes a sábado: 9:00 – 18:00<br>Domingo: cerrado</span>
-            </p>
-            <a class="btn btn-secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+San+Juan+1105,+San+Luis,+Lima" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
-              Cómo llegar
-            </a>
+          <div class="box location-info">
+            <p><strong>Av. San Juan 1105</strong><br>San Luis, Lima</p>
+            <p><a href="https://wa.me/51986658824" target="_blank" rel="noopener">WhatsApp +51 986 658 824</a></p>
+            <p>Lunes a sábado: 9:00 – 18:00<br>Domingo: cerrado</p>
+            <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+San+Juan+1105,+San+Luis,+Lima" target="_blank" rel="noopener">Cómo llegar</a>
           </div>
           <div class="map" data-fallback="Av. San Juan 1105, San Luis, Lima">
             <iframe title="Mapa: Veterinaria Huellavet, Av. San Juan 1105, San Luis, Lima" src="https://www.google.com/maps?q=Av.+San+Juan+1105,+San+Luis,+Lima&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
@@ -211,52 +171,36 @@
       </div>
     </section>
 
-    <!-- RESEÑAS Y REDES -->
     <section class="section" id="resenas" aria-labelledby="resenas-titulo">
       <div class="container narrow center">
-        <p class="eyebrow">Tu opinión nos importa</p>
-        <h2 id="resenas-titulo" class="script-title">¿Ya nos visitaste?</h2>
-        <p class="lead">Cuéntanos cómo te fue a ti y a tu mascota. Tu reseña ayuda a otras familias a encontrarnos.</p>
-        <a class="btn btn-review btn-lg" href="https://search.google.com/local/writereview?placeid=ChIJr5l8T_PHBZERnOz59kLr1FY" target="_blank" rel="noopener">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-star"/></svg>
-          Déjanos tu reseña en Google
-        </a>
-
-        <h3 class="social-title">Síguenos en redes</h3>
-        <p class="handle">@VeterinariaHuellavet</p>
-        <div class="social">
-          <a class="social-link" href="https://www.facebook.com/veterinariahuellavet" target="_blank" rel="noopener">
-            <svg class="icon icon-lg" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg>
-            Facebook
-          </a>
-          <a class="social-link" href="https://www.instagram.com/veterinariahuellavet" target="_blank" rel="noopener">
-            <svg class="icon icon-lg" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg>
-            Instagram
-          </a>
-        </div>
+        <p class="label">Tu opinión importa</p>
+        <h2 id="resenas-titulo">¿Ya nos <span class="kw">visitaste?</span></h2>
+        <p>Cuéntanos cómo te fue a ti y a tu mascota. Tu reseña ayuda a otras familias a encontrarnos.</p>
+        <a class="btn btn-outline" href="https://search.google.com/local/writereview?placeid=ChIJr5l8T_PHBZERnOz59kLr1FY" target="_blank" rel="noopener">Déjanos tu reseña en Google</a>
+        <p class="social-title">Síguenos en redes · @VeterinariaHuellavet</p>
+        <ul class="social">
+          <li><a class="pill-link" href="https://www.facebook.com/veterinariahuellavet" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a class="pill-link" href="https://www.instagram.com/veterinariahuellavet" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
       </div>
     </section>
 
-    <section class="section section-tint" id="empleo" aria-labelledby="empleo-titulo">
-      <div class="container">
-        <p class="eyebrow center">Únete al equipo</p>
-        <h2 id="empleo-titulo" class="center script-title">Trabaja con nosotros</h2>
-        <p class="center">¿Te apasionan los animales? Postula llenando el formulario que corresponde a tu perfil.</p>
-        <p class="center section-cta empleo-links">
-          <a class="btn btn-primary" href="https://forms.gle/xmDTED8bztDDDZ9Y6" target="_blank" rel="noopener">Postular como Groomer</a>
-          <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfOegRVt_pi78HpvtObd3rcMGfqW_Ju4z6ToJVioxcMDGhdYA/viewform" target="_blank" rel="noopener">Postular como Médico Veterinario (part time)</a>
-        </p>
+    <section class="section section-teal" id="empleo" aria-labelledby="empleo-titulo">
+      <div class="container narrow center">
+        <p class="label label-light">Únete al equipo</p>
+        <h2 id="empleo-titulo">Trabaja con nosotros</h2>
+        <p>¿Te apasionan los animales? Postula con el formulario de tu perfil.</p>
+        <div class="btn-row">
+          <a class="btn btn-white" href="https://forms.gle/xmDTED8bztDDDZ9Y6" target="_blank" rel="noopener">Postular como Groomer</a>
+          <a class="btn btn-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfOegRVt_pi78HpvtObd3rcMGfqW_Ju4z6ToJVioxcMDGhdYA/viewform" target="_blank" rel="noopener">Postular como Médico Veterinario (part time)</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <img class="footer-logo" src="assets/logo-marca.png" alt="" width="56" height="56">
-        <p class="footer-name">Veterinaria Huellavet</p>
-        <p class="footer-slogan">Donde cada huella importa</p>
-      </div>
+      <img src="assets/logo-huellavet-blanco.png" alt="Huellavet" width="120" height="103">
       <div>
         <p class="footer-label">Dirección</p>
         <p>Av. San Juan 1105, San Luis, Lima</p>
@@ -273,23 +217,19 @@
     <p class="copy">© 2026 Veterinaria Huellavet</p>
   </footer>
 
-  <!-- Botón flotante de WhatsApp (solo móvil) -->
   <a class="wa-float" href="https://wa.me/51986658824" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-    <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.58 1.97 1.09.97 2 1.27 2.29 1.41.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg>
   </a>
 
-  <!-- Iconos SVG -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="i-paw" viewBox="0 0 64 64"><g fill="currentColor"><ellipse cx="32" cy="44" rx="14" ry="12"/><ellipse cx="14" cy="28" rx="6" ry="8"/><ellipse cx="25" cy="16" rx="6" ry="8.5"/><ellipse cx="39" cy="16" rx="6" ry="8.5"/><ellipse cx="50" cy="28" rx="6" ry="8"/></g></symbol>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7-4.4-9-9.2C1.6 7.3 4 4 7.3 4c2 0 3.6 1.2 4.7 2.8C13.1 5.2 14.7 4 16.7 4 20 4 22.4 7.3 21 10.8 19 15.6 12 20 12 20z"/></symbol>
-    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.44-9.45 9.44zm8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.07c0 2 .52 3.96 1.52 5.68L.58 23.3l5.7-1.5a11.33 11.33 0 0 0 5.77 1.47c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05z"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 6v6l4 2"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
-    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></symbol>
-    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></symbol>
-  </svg>
+  <script>
+  (function(){
+    var btn=document.querySelector('.menu-toggle'), nav=document.getElementById('menu-principal');
+    if(!btn||!nav) return;
+    function set(open){ btn.setAttribute('aria-expanded',String(open)); btn.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú'); nav.classList.toggle('open',open); }
+    btn.addEventListener('click',function(){ set(btn.getAttribute('aria-expanded')!=='true'); });
+    nav.addEventListener('click',function(e){ if(e.target.closest('a')) set(false); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&btn.getAttribute('aria-expanded')==='true'){ set(false); btn.focus(); } });
+  })();
+  </script>
 </body>
 </html>
