@@ -77,6 +77,7 @@
       </button>
       <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
         <ul>
+          <li data-campana><a href="#campana-120">Campaña S/120</a></li><!-- CAMPAÑA S/120 enlace menú -->
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#horario">Horario</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
@@ -111,6 +112,22 @@
         </div>
       </div>
     </section>
+    <!-- CAMPAÑA S/120 INICIO · se oculta sola después del 31/10/2026 (hora Lima). Para quitarla: borrar desde INICIO hasta FIN (y el enlace del menú marcado igual) -->
+    <section class="campana" id="campana-120" data-hasta="2026-10-31" aria-labelledby="campana-titulo">
+      <script>(function(){var s=document.getElementById('campana-120');var f=new Date(s.getAttribute('data-hasta')+'T23:59:59-05:00');if(Date.now()>f.getTime()){s.remove();var l=document.querySelector('[data-campana]');if(l)l.remove();}})();</script>
+      <div class="container">
+        <div class="campana-card">
+          <span class="campana-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg></span>
+          <div class="campana-text">
+            <p class="pill pill-sm campana-pill">Válido hasta el 31/10 · Solo con cita</p>
+            <h2 id="campana-titulo">Consulta + Hemograma + Descarte de Ehrlichia y Anaplasma <span class="campana-precio">todo a S/120</span></h2>
+            <p>Las garrapatas pueden transmitir enfermedades silenciosas. ¡Detectarlas a tiempo importa!</p>
+            <a class="btn btn-primary" href="https://wa.me/51986658824" target="_blank" rel="noopener">Separa tu cita por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CAMPAÑA S/120 FIN -->
     <div class="wave wave-to-soft" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40 C 240 80 480 0 720 30 S 1200 70 1440 30 V80 H0Z"/></svg></div>
 
     <section class="section section-soft paws" id="servicios" aria-labelledby="servicios-titulo">

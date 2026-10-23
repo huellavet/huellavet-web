@@ -214,3 +214,16 @@ p{margin:0 0 1rem}
 @media (min-width:900px){ .hero-art{width:min(500px,100%)} }
 /* SI-009: logo sin slogan en móvil */
 @media (max-width:899px){ .brand img{height:44px;max-width:220px} }
+
+/* CAMPAÑA S/120 INICIO · borrar este bloque al quitar la campaña */
+.campana{padding:.5rem 0 2.5rem;background:#fff}
+.campana-card{display:flex;gap:1.5rem;align-items:flex-start;background:var(--teal-light,#DDF0F0);border:2px solid var(--teal);border-radius:var(--r-card);padding:2rem;box-shadow:var(--shadow)}
+.campana-ico{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:#fff;color:var(--teal-text);display:grid;place-items:center}
+.campana-ico svg{width:36px;height:36px}
+.campana-text{min-width:0}
+.campana-pill{background:var(--magenta-text)}
+.campana h2{font-size:clamp(1.4rem,3.6vw,2rem);overflow-wrap:anywhere}
+.campana-precio{display:inline-block;margin:.35rem 0 0 .25rem;background:var(--magenta);color:#fff;border-radius:999px;padding:.15rem .9rem;white-space:nowrap}
+.campana p:not(.pill){font-size:1.05rem;color:var(--ink)}
+@media (max-width:640px){.campana-pill{letter-spacing:.04em;font-size:.66rem}.campana-precio{margin-left:0}.campana-card{flex-direction:column;padding:1.4rem;gap:1rem}.campana-ico{width:52px;height:52px}.campana .btn{width:100%}}
+/* CAMPAÑA S/120 FIN */
